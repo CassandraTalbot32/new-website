@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+<body>
+<style>
+
+body{
+	 background: url("/static/starlinefreepik.jpg");
+     background-size: cover;
+     padding: 20;   
+     }
+
+
+h1, h2, h3, h4, h5, h6{	
+	color: #191970;
+	font-size: 50px;
+	font-family: 'Cinzel', serif;
+	float: center;
+	width: 90%;
+	height: 190%;
+	padding: 30px;
+	margin: margin;
+}
+
+img{
+	border-radius: 50%;
+	float: right;
+}
+
+
+</style>
+</body>
+</head>
+{% load static %}
+{% include 'navbar.html' %}
+{% block content %}
+<h1>The person behind Zhale and Zentaur designs</h1>
+<span><img src="{% static '/me2.jpg' %}" alt="My image" width='300' height='300' float='right'></span>
+<br>
+<h2>My name is Cassie aka Cassandra,</h2>
+<br>
+<br>
+<h3><img src="{% static '/Chloe_Brandy.jpg' %}" alt="My image" width='350' height='450' float='right'>I have a passion for web development as you already know. Although, there are many other aspects to my life.<br> I have a 10 year old daughter called Chloe, who I love to spend quality time with.</h3><br>
+<br><h4><img src="{% static '/Brandy.jpg' %}" alt="My image" width='300' height='400' float='right'>I am also an equestrian enthusiast, my loyal steed's name is Brandy, this is she... in all her majestic glory</h4>
+<br>
+<h5>Why web development?<br>
+<br>Its something I have enjoyed since learning in 2016. I had started with some small tutorials. Since then I have gone on to do a foundation degree in IT and Computing as well as completing a number of other courses.<br>
+<br>But freelancing?<br>
+<h5>Yes! Freelancing because I love every aspect of building websites. It is also heartwarming to help other small businesses flourish without paying extortionate fees for a first website and/or maintenance on it. I based in Cheam, Surrey.<br> 
+<br>I am available to work on projects now. Please get in touch if you would like more info on collaborating and setting up your online business.</h5>
+
+<h6><a href="/quote">If you already know what you would like then please follow this link and fill out a quote form. This will be processed in 3 hours and you will receive a quote the next day</a></h6>
+{% endblock %}
